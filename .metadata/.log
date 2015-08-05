@@ -563,3 +563,40 @@ Binding(ALT+SHIFT+ARROW_DOWN,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.mylyn.tasks.ui.views.tasks,,,system)
+
+!ENTRY org.eclipse.egit.core 4 0 2015-08-05 20:34:01.104
+!MESSAGE An exception occurred during push on URI https://github.com/sahil2441/geeksForGeeks.git: https://github.com/sahil2441/geeksForGeeks.git: cannot open git-receive-pack
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/sahil2441/geeksForGeeks.git: cannot open git-receive-pack
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:160)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:228)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/sahil2441/geeksForGeeks.git: cannot open git-receive-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:521)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:399)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1173)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:156)
+	... 4 more
+Caused by: java.net.UnknownHostException: github.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1301)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:468)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at org.eclipse.jgit.transport.http.JDKHttpConnection.getResponseCode(JDKHttpConnection.java:98)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:168)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:475)
+	... 8 more

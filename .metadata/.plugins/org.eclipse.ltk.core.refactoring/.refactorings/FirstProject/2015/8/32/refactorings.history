@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;n&apos; in &apos;SortAnArray.sortArray(...)&apos; to &apos;numberOfOccurances&apos;&#x0A;- Original project: &apos;FirstProject&apos;&#x0A;- Original element: &apos;SortAnArray.sortArray(int[], int[], int[]).n&apos;&#x0A;- Renamed element: &apos;n&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;n&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{SortAnArray.java[SortAnArray~sortArray~\[I~\[I~\[I@n!505!510!509!509!I!0!false" name="numberOfOccurances" references="true" stamp="1438785993843" version="1.0"/>
+</session>

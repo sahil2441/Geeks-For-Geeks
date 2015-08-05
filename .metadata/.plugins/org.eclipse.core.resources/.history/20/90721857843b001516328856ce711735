@@ -7,17 +7,7 @@ public class SortAnArray {
 	     int[] A2 = {2, 1, 8, 3};
 	     int[] temp={2, 1, 2, 5, 7, 1, 9, 3, 6, 8, 8};
 	     Arrays.sort(temp);
-	     printArray(A1);
-	     System.out.println("After..");
 	     sortArray(A1,A2,temp);
-	     printArray(A1);
-	}
-
-	private static void printArray(int[] a1) {
-		for (int i = 0; i < a1.length; i++) {
-			System.out.print(a1[i]+" ");
-		}
-		
 	}
 
 	private static void sortArray(int[] a1, int[] a2, int[] temp) {
@@ -65,55 +55,20 @@ public class SortAnArray {
 		}
 	}
 
-	private static int findLastOccurance(int[] temp, int x) {
+	private static int findLastOccurance(int[] temp, int i) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private static int findFirstOccurance(int[] temp, int i) {
 		int index=-1;
 		int left=0, right=temp.length,mid;
-		while(left<=right){
+		while(){
 			mid=(left+right)/2;
-			if(temp[mid]==x){
-				index=mid;
-				break;
-			}
-			else if(temp[mid]>x){
-				right=mid-1;				
-			}
-			else{
-				left=mid+1;
-			}
-		}
-		//check index
-		if(index!=-1){
-			while(!(temp[index+1]>temp[index])){
-				index++;			
-			}
 		}
 		return index;
 	}
 
-	private static int findFirstOccurance(int[] temp, int x) {
-		int index=-1;
-		int left=0, right=temp.length,mid;
-		while(left<=right){
-			mid=(left+right)/2;
-			if(temp[mid]==x){
-				index=mid;
-				break;
-			}
-			else if(temp[mid]>x){
-				right=mid-1;				
-			}
-			else{
-				left=mid+1;
-			}
-		}
-		//check index
-		if(index!=-1&&index>0){
-			while(!(temp[index-1]<temp[index])){
-				index--;			
-			}
-		}
-		return index;
-	}
 }
 
 

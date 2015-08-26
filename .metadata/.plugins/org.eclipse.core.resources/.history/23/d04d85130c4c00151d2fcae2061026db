@@ -1,0 +1,17 @@
+/**
+ * 
+ * @author sahil
+ *
+ */
+public class SearchSortedMatrix {
+
+	public static void main(String[] args) {
+		int[][] arr={{1,2,3},{2,3,4},{3,4,5}};
+		System.out.println(searchInMatrix(arr,7));
+	}
+
+	private static boolean searchInMatrix(int[][] arr, int i) {
+		return false;
+	}
+
+}

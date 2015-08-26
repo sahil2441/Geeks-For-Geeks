@@ -1,4 +1,4 @@
-commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Second change to file.</message>\n<message>First File.</message>\n<message>First commit</message>\n</messages>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Rearrange array in alternating positive &amp; negative items with O(1) extra&\#x0A;space</message>\n<message>Sort an array according to the order defined by another array&\#x0A;</message>\n<message>Sort an array according to the order defined by another array.</message>\n<message>Second change to file.</message>\n<message>First File.</message>\n<message>First commit</message>\n</messages>
 eclipse.preferences.version=1
 resourcehistory_graph_split=695,304
 resourcehistory_rev_split=700,300

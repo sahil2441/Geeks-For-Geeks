@@ -1,0 +1,18 @@
+/**
+ * Smallest subarray with sum greater than a given value
+ * @author sahil
+ */
+public class SmallestSubarray {
+
+	public static void main(String[] args) {
+		int arr1[] = {1, 4, 45, 6, 10, 19};
+		int x=51;
+		System.out.println(SmallestSubarray(arr1,x));
+
+	}
+
+	private static int SmallestSubarray(int[] arr1, int x) {
+		return -1;
+	}
+
+}

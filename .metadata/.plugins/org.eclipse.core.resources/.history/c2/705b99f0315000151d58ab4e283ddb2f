@@ -7,7 +7,7 @@ public class SmallestSubarray {
 
 	public static void main(String[] args) {
 		int arr1[] = {1, 4, 45, 6, 10, 19};
-		int x=50;
+		int x=51;
 		System.out.println(SmallestSubarray(arr1,x));
 
 	}
@@ -26,13 +26,11 @@ public class SmallestSubarray {
 				while(j<=i){
 					sum-=arr1[j];
 					j++;
-					if(sum>x){
-						count=i-j+1;
-					}
 				}
-			}			
+			}
+			
+			j=i;
 		}
-		
 		return count;
 	}
 

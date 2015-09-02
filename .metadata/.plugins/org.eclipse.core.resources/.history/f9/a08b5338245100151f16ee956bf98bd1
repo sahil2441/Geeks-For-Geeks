@@ -1,0 +1,13 @@
+/**
+ * Find k closest elements to a given value
+ * Given a sorted array arr[] and a value X, find the k closest elements to X in arr[]. 
+ * @author sahil
+ */
+public class FindKClosestElements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,10 +1,46 @@
+/**
+ * Remove minimum elements from either side such that 2*min becomes more than max.
+ * @author sahil
+ */
 
 public class RemoveMinElts {
 
 	public static void main(String[] args) {
 		int arr[] = {4, 5, 100, 9, 10, 11, 12, 15, 200};
+		int l=0, r=arr.length;
+		System.out.println(minElements(arr,l,r));
+	}
 
+	private static int minElements(int[] arr,int l, int r) {
+		
+		int min=getMinElement(arr,l,r);
+		int max=getMaxElement(arr,l,r);
+		
+		if(2*min>max){
+//			matrix[l][r]=0;
+			return 0;
+		}
+		return Math.min(minElements(arr,l+1,r),minElements(arr, l, r-1))+1;
+	}
 
+	private static int getMaxElement(int[] arr, int l, int r) {
+		int max=arr[0];
+		for (int i = 1; i < arr.length; i++) {
+			if(arr[i]>max){
+				max=arr[i];
+			}
+		}
+		return max;
+	}
+
+	private static int getMinElement(int[] arr, int l, int r) {
+		int min=arr[0];
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i]<min){
+				min=arr[i];
+			}
+		}
+		return min;
 	}
 
 }

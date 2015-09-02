@@ -1,0 +1,13 @@
+/**
+ * Count number of binary strings without consecutive 1’s
+ * @author sahil
+ */
+public class CountNumberOfBinaryStrings {
+
+	public static void main(String[] args) {
+		int n=5;
+		int arr[n]=new int[n];
+
+	}
+
+}

@@ -53,18 +53,19 @@ public class FindKClosestElements {
 		}
 	}
 	private static int getIndexOfX(int[] arr, int x) {
-		int l=0, r=arr.length,mid;
-		while(l<=r){
-			mid=(l+r)/2;
+		int l=0, r=arr.length;
+		int mid=(l+r)/2;
+		while(l<r){
 			if(arr[mid]==x){
 				return mid;
 			}
 			else if(arr[mid]>x){
-				r=mid-1;
+				
 			}
 			else{
-				l=mid+1;
+				
 			}
+			
 		}
 		return -1;
 	}

@@ -1,0 +1,15 @@
+
+public class NextGreaterNumber {
+
+	public static void main(String[] args) {
+		String a="534937";
+		System.out.println(printNextGreaterNumber(a));
+	}
+
+	private static String printNextGreaterNumber(String a) {
+		if(a.length()<=1) return 
+		int n=a.length()-1;
+		return a;
+	}
+
+}

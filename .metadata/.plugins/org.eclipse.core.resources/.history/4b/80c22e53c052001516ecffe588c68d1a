@@ -1,0 +1,39 @@
+
+public class NextGreaterNumber {
+
+	public static void main(String[] args) {
+		String a="534937";
+		System.out.println(printNextGreaterNumber(a));
+	}
+
+	private static String printNextGreaterNumber(String a) {
+		if(a.length()<=1){
+			return "Not Possible";
+		}
+		else{
+			int targetIndex,leastIndex;
+			int i=a.length()-1;
+			while(i>0){
+				if(a.charAt(i-1)>a.charAt(i)){
+					targetIndex=i-1;	
+					leastIndex=findLeastIndex(a,targetIndex);
+					swap(a,targetIndex,leastIndex);
+				}
+			}
+			return a;			
+		}
+	}
+
+	private static void swap(String a, int targetIndex, int leastIndex) {
+		char temp=a.charAt(targetIndex);
+		StringBuilder builder=new StringBuilder("a");
+		builder.replace(targetIndex, targetIndex, builder.charAt(leastIndex));
+		
+	}
+
+	private static int findLeastIndex(String a, int targetIndex) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

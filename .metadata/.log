@@ -1029,3 +1029,236 @@ java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfigu
 	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
 	at java.util.TimerThread.mainLoop(Timer.java:555)
 	at java.util.TimerThread.run(Timer.java:505)
+!SESSION 2015-09-04 15:02:09.113 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-09-04 15:02:48.640
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-09-04 15:02:54.653
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-09-04 15:15:22.873
+!MESSAGE Can't get file difference of commit 51c90fa961a15ed1049763c1eeb15c72232829af 1441303483 -----p.
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing tree 8e9b01638dd966a61060a5874cdf7509b5fb3ec9
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:149)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.reset(CanonicalTreeParser.java:202)
+	at org.eclipse.jgit.treewalk.TreeWalk.reset(TreeWalk.java:428)
+	at org.eclipse.egit.ui.internal.history.FileDiff.compute(FileDiff.java:91)
+	at org.eclipse.egit.ui.internal.history.FileDiffContentProvider.getElements(FileDiffContentProvider.java:73)
+	at org.eclipse.jface.viewers.StructuredViewer.getRawChildren(StructuredViewer.java:999)
+	at org.eclipse.jface.viewers.ColumnViewer.getRawChildren(ColumnViewer.java:699)
+	at org.eclipse.jface.viewers.AbstractTableViewer.getRawChildren(AbstractTableViewer.java:1043)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:905)
+	at org.eclipse.jface.viewers.StructuredViewer.getSortedChildren(StructuredViewer.java:1057)
+	at org.eclipse.jface.viewers.AbstractTableViewer.internalRefreshAll(AbstractTableViewer.java:667)
+	at org.eclipse.jface.viewers.AbstractTableViewer.internalRefresh(AbstractTableViewer.java:615)
+	at org.eclipse.jface.viewers.AbstractTableViewer.internalRefresh(AbstractTableViewer.java:607)
+	at org.eclipse.jface.viewers.StructuredViewer$7.run(StructuredViewer.java:1500)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1436)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1497)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:521)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1456)
+	at org.eclipse.egit.ui.internal.history.GitHistoryPage.setupFileViewer(GitHistoryPage.java:1807)
+	at org.eclipse.egit.ui.internal.history.GitHistoryPage.initAndStartRevWalk(GitHistoryPage.java:1598)
+	at org.eclipse.egit.ui.internal.history.GitHistoryPage.inputSet(GitHistoryPage.java:1272)
+	at org.eclipse.team.ui.history.HistoryPage.setInput(HistoryPage.java:59)
+	at org.eclipse.egit.ui.internal.history.GitHistoryPage.setInput(GitHistoryPage.java:1159)
+	at org.eclipse.team.internal.ui.history.GenericHistoryView.getPageRec(GenericHistoryView.java:571)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:766)
+	at org.eclipse.team.internal.ui.history.GenericHistoryView.showHistoryPageFor(GenericHistoryView.java:548)
+	at org.eclipse.team.internal.ui.history.GenericHistoryView.showLastSelectedElement(GenericHistoryView.java:489)
+	at org.eclipse.team.internal.ui.history.GenericHistoryView.access$2(GenericHistoryView.java:476)
+	at org.eclipse.team.internal.ui.history.GenericHistoryView$1.selectionChanged(GenericHistoryView.java:326)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.notifyListeners(SelectionService.java:218)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.handlePostSelectionChanged(SelectionService.java:122)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.access$1(SelectionService.java:112)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService$3.selectionChanged(SelectionService.java:80)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$4.run(SelectionAggregator.java:166)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyPostListeners(SelectionAggregator.java:163)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.access$8(SelectionAggregator.java:160)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$8$1.run(SelectionAggregator.java:272)
+	at org.eclipse.e4.core.contexts.RunAndTrack.runExternalCode(RunAndTrack.java:56)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$8.changed(SelectionAggregator.java:269)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:110)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:338)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:352)
+	at org.eclipse.e4.ui.internal.workbench.SelectionServiceImpl.setPostSelection(SelectionServiceImpl.java:36)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart$3.selectionChanged(CompatibilityPart.java:127)
+	at org.eclipse.jface.viewers.StructuredViewer$3.run(StructuredViewer.java:876)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.StructuredViewer.firePostSelectionChanged(StructuredViewer.java:873)
+	at org.eclipse.jface.viewers.StructuredViewer.handlePostSelect(StructuredViewer.java:1217)
+	at org.eclipse.jface.viewers.StructuredViewer$5.widgetSelected(StructuredViewer.java:1243)
+	at org.eclipse.jface.util.OpenStrategy.firePostSelectionEvent(OpenStrategy.java:265)
+	at org.eclipse.jface.util.OpenStrategy.access$5(OpenStrategy.java:259)
+	at org.eclipse.jface.util.OpenStrategy$1$2$1.run(OpenStrategy.java:430)
+	at org.eclipse.swt.widgets.Display.timerProc(Display.java:4380)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2477)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3407)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-09-04 15:15:22.882
+!MESSAGE Missing commit e2b1c2be78b5d0ecb1bb002da6a09d016c3f4cdf
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing commit e2b1c2be78b5d0ecb1bb002da6a09d016c3f4cdf
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:149)
+	at org.eclipse.jgit.revwalk.RevWalk.getCachedBytes(RevWalk.java:883)
+	at org.eclipse.jgit.revwalk.RevCommit.parseBody(RevCommit.java:152)
+	at org.eclipse.jgit.revwalk.RevWalk.parseBody(RevWalk.java:1010)
+	at org.eclipse.egit.ui.internal.history.SWTCommit.parseBody(SWTCommit.java:36)
+	at org.eclipse.egit.ui.internal.history.CommitInfoBuilder.format(CommitInfoBuilder.java:185)
+	at org.eclipse.egit.ui.internal.history.FormatJob.run(FormatJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-09-04 15:15:23.210
+!MESSAGE Missing commit e2b1c2be78b5d0ecb1bb002da6a09d016c3f4cdf
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing commit e2b1c2be78b5d0ecb1bb002da6a09d016c3f4cdf
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:149)
+	at org.eclipse.jgit.revwalk.RevWalk.getCachedBytes(RevWalk.java:883)
+	at org.eclipse.jgit.revwalk.RevCommit.parseBody(RevCommit.java:152)
+	at org.eclipse.jgit.revwalk.RevWalk.parseBody(RevWalk.java:1010)
+	at org.eclipse.egit.ui.internal.history.SWTCommit.parseBody(SWTCommit.java:36)
+	at org.eclipse.egit.ui.internal.history.CommitInfoBuilder.format(CommitInfoBuilder.java:185)
+	at org.eclipse.egit.ui.internal.history.FormatJob.run(FormatJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2015-09-04 15:15:48.663 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-09-04 15:15:54.528
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-09-04 16:16:19.428
+!MESSAGE Exception caught during execution of add command
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of add command
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:212)
+	at org.eclipse.egit.core.op.CommitOperation.addUntracked(CommitOperation.java:222)
+	at org.eclipse.egit.core.op.CommitOperation.access$4(CommitOperation.java:210)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:195)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:206)
+	at org.eclipse.egit.ui.internal.commit.CommitJob.run(CommitJob.java:93)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.errors.LockFailedException: Cannot lock /home/sahil/git/nachos/.git/index
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:224)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:301)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:267)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1053)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:142)
+	... 7 more
+!SESSION 2015-09-04 16:50:26.905 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-09-04 16:50:37.120
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+!SESSION 2015-09-09 00:09:01.723 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-09-09 00:09:35.643
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.jface 2 0 2015-09-09 00:25:56.899
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-09-09 00:25:56.899
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@50d75ab1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a8343ed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)

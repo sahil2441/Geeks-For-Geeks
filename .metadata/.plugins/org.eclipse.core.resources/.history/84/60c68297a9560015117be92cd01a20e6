@@ -1,0 +1,9 @@
+
+public class PrintPath {
+
+	public static void main(String[] args) {
+		Node root=new Node(10);
+
+	}
+
+}
